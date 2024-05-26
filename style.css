@@ -90,3 +90,89 @@ section{
     color: black;
 }
 
+.main-planet{
+    background: url(planet.png);
+    background-repeat: no-repeat;
+    width: 405px;
+    height: 330px;
+    transform: rotate(-176deg);
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+}
+
+.main-content{
+    z-index: 2;
+}
+@keyframes planet-move{
+    from{transform: translateY(0px);}
+    to{transform: translateY(70px);}
+}
+
+.moving-planet{
+    background:url(moving-planet.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    animation-name:planet-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.title{
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    text-shadow: 5px 5px 0 black;
+}
+
+.about-content{
+    width: 35%;
+    height: 270px;
+    background: #792AFF;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    display: flex;
+}
+
+
+.about-title{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa';
+}
+
+.about-card{
+    background-image: url(form2.png);
+    background-repeat: no-repeat;
+    width: 376px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+.about-card p{
+    color: #000;
+    font-size: 17px;
+    align-self: start;
+    padding-left: 20px;
+    line-height: 25px;
+    font-family: 'Comfortaa';
+}
+
+.about-card img{
+    padding-bottom: 20px;
+}
