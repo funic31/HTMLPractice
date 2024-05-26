@@ -135,18 +135,17 @@ section{
 .about-content{
     width: 35%;
     height: 270px;
+    border-radius: 0px 0px 0px 20px;
     background: #792AFF;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 40px ;
+    padding-top: 40px;
     position: relative;
     display: flex;
 }
 
-
 .about-title{
-    color: #fff;
+    color: #FFF;
     font-size: 20px;
-    font-weight: 700;
     max-width: 463px;
     margin-bottom: 20px;
     font-family: 'Comfortaa';
@@ -164,6 +163,7 @@ section{
     padding-top: 20px;
     position: relative;
 }
+
 .about-card p{
     color: #000;
     font-size: 17px;
