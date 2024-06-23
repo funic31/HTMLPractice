@@ -7,45 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="main">
-        <nav>
-            <div class="fixed-menu">
-                <h1 class="logo">DK</h1>
-                <div class="nav-links">
-                    <a href="#main" class="nav-link">Main</a>
-                    <a href="#about" class="nav-link">About me</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#works" class="nav-link">Work</a>
-                    <a href="#comments" class="nav-link">Reviews</a>
+    <nav>
+        <div class="fixed-menu">
+            <h1 class="logo">DK</h1>
+            <div class="nav-links">
+                <a class="nav-link main-link active" href="#main">Главная</a>
+                <a class="nav-link about-link" href="#about">Обо мне</a>
+                <a class="nav-link skills-link" href="#skills">Навыки</a>
+                <a class="nav-link works-link" href="#works">Работы</a>
+                <a class="nav-link comments-link" href="#comments">Отзывы</a>
+            </div>
+            <div class="mobile-button">
+                <img class="mobile-btn" src="mobile_menu.png" width="40">
+                <img class="mobile-btn btn-hide" src="close_menu.png" width="40">
+            </div>
+            <div class="mobile-menu hide">
+                <div class="mobile-nav">
+                    <div class="mobile-nav-links">
+                        <a class="nav-link" href="#main">Главная</a>
+                        <a class="nav-link" href="#about">Обо мне</a>
+                        <a class="nav-link" href="#skills">Навыки</a>
+                        <a class="nav-link" href="#works">Работы</a>
+                        <a class="nav-link" href="#comments">Отзывы</a>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <div class="main-block">
-            
-            <img src="maskot.png" alt="Mascot" width="125">
-            
-            <div class="main-content">
-                <img src="planet.png" alt="planet" class="main-planet"> 
-                <h1 class="main-title">
-                    SVYATOSLAV POPOV
-                </h1>
-                
-                <p class="main-subtitle">
-                    Personal Page of Programmer
-                </p>
-            </div>
-            <div class="moving-planet">
+        </div>
+    </nav>
 
+    <section id="main">
+        <div class="main-block">
+            <div class="planet"></div>
+            <img src="maskot.png" width="125">
+            <div class="main-content">
+                <h1 class="main-title">ДИАНА КОРНИГОР</h1>
+                <p class="main-subtitle">личная страница разработчика</p>
             </div>
             <div class="button">
-                <a href="#">More</a>
-                
+                <a href="#about">Подробнее</a>  
             </div>
-            
-            
         </div>
-        
+        <div class="moving-planet"></div>
     </section>
+
     <section id="about">
         <h1 class="title">ОБО МНЕ</h1>
             <div class="about-block">
@@ -58,7 +62,7 @@
                             современные проекты.
                         </p>
                         <div class="button">
-                            <a href="#">Мои навыки</a>
+                            <a href="#skills">Мои навыки</a>  
                         </div>
                     </div>
                 </div>
@@ -69,55 +73,53 @@
                     <p>Дата рождения: 1999</p>
                 </div>
             </div>
-
-    </section>
-    <section id="skills">
-        <h1 class="title">SKILLS</h1>
-        <div class="skills-block">
             
-            <div class="skills-block">
-                <div class="skills-card">
-                    <p>I MADE THIS USING THE LEARNING OF THE SCHOOL ROCKET TECH SCHOOL</p>
+    </section>
+
+    <section id="skills">
+        <h1 class="title">НАВЫКИ</h1>
+        <div class="skills-block">
+            <div class="skills-card">
+                <p> ЭТОТ САЙТ Я СДЕЛАЛА
+                    В РАМКАХ ОБУЧЕНИЯ ШКОЛЫ
+                    ROCKET TECH SCHOOL
+                </p>
                 <div class="languages">
-                    <img src="html.png" alt="">
-                    <img src="css.png" alt="">
-                    <img src="js.png" alt="">
+                    <img src="html.png" width="70">
+                    <img src="css.png" width="70">
+                    <img src="js.png" width="70">
                 </div>
                 <div class="button">
-                    <a href="#">Check Work</a>
+                    <a href="#works">Смотреть работы</a>  
                 </div>
-
-                </div>
-
             </div>
         </div>
     </section>
+
     <section id="works">
-
-        <h1 class="title">WORK</h1>
+        <h1 class="title">РАБОТЫ</h1>
         <div class="works-block">
-            <img src="work1.png" alt="">
-            <img src="work2.png" alt="">
-            <img src="work3.png" alt="">
-        </div>
-        <div class="works-block">
-
+            <img src="work1.png" >
+            <img src="work2.png">
+            <img src="work3.png">
         </div>
     </section>
+
     <section id="comments">
-        <h1 class="title">REVIEWS</h1>
+        <h1 class="title">ОТЗЫВЫ</h1>
         <div class="comments-block">
             <div class="comment-card">
-                <img src="photo1.png" alt="">
-                <h3>Vladimir</h3>
-                <p>Owner of Rocket Tech School</p>
+                <img src="photo1.png">
+                <h3>Владимир</h3>
+                <p>Основатель Rocket Tech School</p>
             </div>
             <div class="comment">
                 <p>
-                    This girl did the training of web for 4 months, and already makes hard websites!
+                    Эта девочка проходила обучение 
+                    веб разработке 4 месяца, 
+                    и уже создает сложные сайты!
                 </p>
             </div>
-
             <div class="comment-card">
                 <img src="photo2.png">
                 <h3>Диана</h3>
@@ -125,13 +127,14 @@
             </div>
             <div class="comment">
                 <p>
-                    Очень хорошо пишет код.
-                    Отличная оптимизация сайта.
+                    Очень хорошо пишет код. 
+                    Отличная оптимизация сайта. 
                     Современно, стильно, молодежно!
                 </p>
             </div>
         </div>
     </section>
+
     <footer>
         <div class="footer-info">
             <p>ДИАНА КОРНИГОР</p>
@@ -141,12 +144,13 @@
             <p>© 2023</p>
         </div>
         <div class="footer-links">
-            <a href="#"> <img src="facebook.svg"> </a>
-            <a href="#"> <img src="instagram.svg"> </a>
-            <a href="#"> <img src="telegram.svg"> </a>
-            <a href="#"> <img src="discord.svg"> </a>
+            <a href="#"><img src="facebook.svg"></a>
+            <a href="#"><img src="instagram.svg"></a>
+            <a href="#"><img src="telegram.svg"></a>
+            <a href="#"><img src="discord.svg"></a>
         </div>
-     </footer>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
